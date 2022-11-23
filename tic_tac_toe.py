@@ -1,7 +1,7 @@
 #tabela
-table = [[1, None, 1],
-         [None, 1, None],
-         [None, None, None]]
+table = [[1, 2, 1],
+         [2, 1, 2],
+         [2, 1, 2]]
 #igrac
 
 player = "x"
@@ -10,7 +10,6 @@ status = False
 #moguci nacini za pobjedu
 
 def check_table(table):
-
     #check by row
     for item in table:
         if len(set(item)) == 1 and None not in item:
@@ -49,4 +48,13 @@ def check_table(table):
         # print (f"Opposite diagonal {status}")
         return status
 
-status = check_table(table)
+def check_if_even(table):
+    for item in table:
+        if None not in item:
+            return True
+
+
+
+
+
+
