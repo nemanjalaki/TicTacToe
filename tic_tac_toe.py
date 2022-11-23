@@ -11,8 +11,5 @@ player = "x"
 def check_table(table):
     pass
     #check by row
-    for item in table:
-        print(item)
     #check by col
     #check diagonal
-
