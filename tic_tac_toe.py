@@ -53,6 +53,16 @@ def check_if_even(table):
         if None not in item:
             return True
 
+def print_table(table):
+
+    for item in table:
+        print("-"*10)
+        print(*item,sep=" | ")
+    print("-"*10)
+        
+            
+
+
 
 
 
